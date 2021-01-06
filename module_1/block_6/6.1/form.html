@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="GET">
+        <fieldset>
+            <div>
+                <label for="name">Nome</label>
+                <input type="text" id="name" name="name" maxlength="40" required>
+            </div>
+            
+            <div>
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" maxlength="50" required>
+            </div>
+
+            <div>
+                <label for="cpf">CPF</label>
+                <input type="text" id="cpf" name="cpf" maxlength="11" required>
+            </div>
+            
+            <div>
+                <label for="address">Endereço</label>
+                <input type="text" id="address" name="address" maxlength="200" required>
+            </div>
+
+            <div>
+                <label for="city">Cidade</label>
+                <input type="text" id="city" name="city" maxlength="28" required>
+            </div>
+
+            <div>
+                <label for="state">Estado</label>
+                <select name="state" id="state" required>
+
+                </select>
+            </div>
+
+            <div>
+                <label for="apartment">Apartamento</label>
+                <input type="radio" id="apartment" name="house-type" value="apartment" required>
+                <label for="apartment">Casa</label>
+                <input type="radio" id="house" name="house-type" value="house">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <div>
+                <textarea name="cv-resume" id="cv-resume" cols="30" rows="10"></textarea>
+            </div>
+
+            <div>
+                <label for="job-title">Cargo</label>
+                <input type="text" name="job-title" id="job-title" maxlength="40" required>
+            </div>
+
+            <div>
+                <label for="job-description">Descrição do cargo</label>
+                <input type="text" name="job-description" id="job-description" maxlength="500" required>
+            </div>
+
+            <div>
+                <label for="start-date">Data de Início</label>
+                <input type="text" name="start-date" id="start-date" required>
+            </div>
+        </fieldset>
+    </form>
+    <button>Confirmar</button>
+    <button>Limpar</button>
+    <script src="script.js"></script>
+</body>
+</html>
