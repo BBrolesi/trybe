@@ -1,12 +1,6 @@
 const myRemoveWithoutCopy = require("./myRemoveWithoutCopy");
 
 describe('myRemoveWithoutCopy function tests', () => {
-    it('Return the modified array without the described item', () => {
-        const array = [1, 2, 3, 4, 5];
-        const item = 5;
-        myRemoveWithoutCopy(array, item);
-        expect(array).not.toContain(item);
-    });
     it('Removes number 3 from [1, 2, 3, 4] array and return [1, 2, 4]', () => {
         expect(myRemoveWithoutCopy([1, 2, 3, 4], 3)).not.toContain(3);
     });
