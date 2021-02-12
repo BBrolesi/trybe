@@ -36,3 +36,41 @@
     transform: rotate(360deg);
   }
 }
+
+.Pokemon-card{
+  background-color: rgb(236, 240, 241);
+  border: 2px solid rgb(44, 62, 80);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  margin: 15px;
+  text-align: center;
+  width: 45%;
+}
+
+.Pokemon-card:nth-last-child(1){
+  width: 90%;
+}
+
+.Pokemon-list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.Podex-pokemon-picutre{
+  align-self: center;
+  margin-left: 60px;
+}
+
+@media (max-width: 800px){
+  .Pokemon-list{
+    flex-direction: column;
+  }
+  .Pokemon-card{
+    width: 90%;
+    text-align: center;
+    min-width: 400px;
+  }
+}
+
