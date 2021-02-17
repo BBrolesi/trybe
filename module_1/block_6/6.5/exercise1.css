@@ -1,0 +1,62 @@
+body {
+    font-size: large;
+    margin: 0 3%;
+}
+h1 {
+    font-size: 1.5em;
+}
+h2 {
+    font-size: 1.2em;
+}
+
+img {
+    max-width: 100%;
+}
+
+figure {
+    margin: 5%;
+    background: black;
+    border-radius: 5px;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+p{
+    text-align: justify;
+} 
+
+@media screen and (min-width: 900px){
+    body{
+        background-color: red;
+        font-size: medium;
+        margin: 0 15%;
+    }
+
+    figure {
+        max-width: 35%;
+    }
+
+    .two-column-container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    body{
+        background-color: khaki;
+        font-size: 1.1em;
+        margin: 0 20%;
+        max-width: 1300px;
+    }
+
+    figure {
+        max-width: 35%;
+    }
+
+    .two-column-container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
