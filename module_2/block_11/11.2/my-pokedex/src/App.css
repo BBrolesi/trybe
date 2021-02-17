@@ -1,0 +1,76 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.Pokemon-card{
+  background-color: rgb(236, 240, 241);
+  border: 2px solid rgb(44, 62, 80);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  margin: 15px;
+  text-align: center;
+  width: 45%;
+}
+
+.Pokemon-card:nth-last-child(1){
+  width: 90%;
+}
+
+.Pokemon-list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.Podex-pokemon-picutre{
+  align-self: center;
+  margin-left: 60px;
+}
+
+@media (max-width: 800px){
+  .Pokemon-list{
+    flex-direction: column;
+  }
+  .Pokemon-card{
+    width: 90%;
+    text-align: center;
+    min-width: 400px;
+  }
+}
+
